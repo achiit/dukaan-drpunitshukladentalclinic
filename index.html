@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Punit Shukla's Dental Clinic | Shuklaganj, Unnao</title>
+<meta name="description" content="Digital dental treatment in Shuklaganj, Unnao. Root canal, fillings, scaling, implants and braces. Open 5:00 pm to 9:30 pm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0F3F73; --blue:#1C6EA4; --teal:#3AA6B9; --mist:#EAF4F8; --ink:#16283A; --muted:#51657A; --white:#fff;
+  --head:'Sora',system-ui,sans-serif; --body:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--white);line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--head);line-height:1.15;color:var(--navy)}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:14px}
+
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid #DCE8EF}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 22px;max-width:1040px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--head);font-weight:700;color:var(--navy);font-size:.98rem;line-height:1.2}
+.brand img{width:46px;height:46px;border-radius:50%}
+nav{display:flex;gap:22px;font-weight:500;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--navy)}
+
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem;border:2px solid transparent;transition:background .2s,color .2s}
+.btn-main{background:var(--navy);color:#fff}
+.btn-main:hover{background:var(--blue)}
+.btn-alt{border-color:var(--navy);color:var(--navy)}
+.btn-alt:hover{background:var(--navy);color:#fff}
+
+.hero{background:linear-gradient(180deg,var(--mist),#fff);padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);letter-spacing:-.02em;margin-bottom:18px}
+.hero p.lead{color:var(--muted);max-width:46ch;margin-bottom:26px;font-size:1.08rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.time{background:var(--navy);color:#fff;border-radius:28px;padding:30px 28px;text-align:center}
+.time small{display:block;opacity:.8;font-size:.95rem}
+.time strong{display:block;font-family:var(--head);font-size:2.3rem;line-height:1.1;margin:10px 0}
+.time span{color:#BDE6EE;font-weight:500}
+
+section{padding:68px 0}
+.services{background:#fff}
+.services ul{list-style:none;padding:0;margin-top:26px;border-top:2px solid var(--navy)}
+.services li{display:grid;grid-template-columns:minmax(150px,.6fr) 1.4fr;gap:8px 28px;padding:20px 0;border-bottom:1px solid #D5E3EC}
+.services h3{font-size:1.2rem}
+.services p{color:var(--muted)}
+
+.digital{background:var(--navy);color:#fff}
+.digital h2{color:#fff}
+.digital p{max-width:60ch;color:#D7E8F2;font-size:1.1rem}
+
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:22px}
+.visit dl{display:grid;gap:18px}
+.visit dt{font-family:var(--head);font-weight:700;color:var(--navy);margin-bottom:2px}
+.visit dd{color:var(--muted)}
+.visit dd a{color:var(--blue);font-weight:600}
+.note{background:var(--mist);border-radius:24px;padding:28px}
+.note p{margin-bottom:18px}
+
+footer{background:#0A2A4D;color:#B9CDDD;text-align:center;padding:26px 22px;font-size:.92rem}
+
+.wa{position:fixed;right:18px;bottom:18px;background:#1FA855;color:#fff;text-decoration:none;font-weight:600;padding:13px 20px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.22);z-index:20}
+
+@media(max-width:760px){
+  nav{display:none}
+  .hero{padding:40px 0 48px}
+  .hero .wrap,.visit .grid{grid-template-columns:1fr}
+  .services li{grid-template-columns:1fr}
+  section{padding:48px 0}
+  .brand span{font-size:.88rem}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="brand" href="#top">
+      <img src="logo.png" alt="Dr. Punit Shukla's Dental Clinic logo" width="46" height="46">
+      <span>Dr. Punit Shukla's<br>Dental Clinic</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#digital">Our clinic</a>
+      <a href="#visit">Visit us</a>
+    </nav>
+    <a class="btn btn-main" href="tel:+916397828030">Call now</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Trusted place for your oral and dental care</h1>
+        <p class="lead">Fully equipped, digital dental treatment in Shuklaganj, Unnao, with Dr. Punit Kumar Shukla. Visit after work, from 5:00 pm to 9:30 pm.</p>
+        <div class="cta">
+          <a class="btn btn-main" href="tel:+916397828030">Call 6397828030</a>
+          <a class="btn btn-alt" href="https://wa.me/916397828030?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book on WhatsApp</a>
+        </div>
+      </div>
+      <div class="time" aria-label="Clinic hours">
+        <small>Clinic hours</small>
+        <strong>5:00 pm to 9:30 pm</strong>
+        <span>Near Bank of India, Poni Road</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <h2>Treatments we offer</h2>
+      <ul>
+        <li><h3>Root canal treatment</h3><p>Relieves tooth pain and saves a badly infected tooth so you can keep it.</p></li>
+        <li><h3>Fillings</h3><p>Repairs cavities and chipped teeth so you can chew comfortably again.</p></li>
+        <li><h3>Scaling</h3><p>Removes plaque and tartar for healthier gums and fresher breath.</p></li>
+        <li><h3>Dental implants</h3><p>Replaces missing teeth with a fixed, natural-looking solution.</p></li>
+        <li><h3>Braces</h3><p>Straightens crooked or crowded teeth for a confident smile.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="digital" id="digital">
+    <div class="wrap">
+      <h2>Digital dental treatment, close to home</h2>
+      <p>Our clinic is fully equipped with modern digital technology, so you can get advanced dental care in Unnao without travelling to a bigger city.</p>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <h2>Visit the clinic</h2>
+      <div class="grid">
+        <dl>
+          <div><dt>Address</dt><dd>Near Bank of India, Poni Road, Shuklaganj, Unnao, UP 209861</dd></div>
+          <div><dt>Hours</dt><dd>5:00 pm to 9:30 pm</dd></div>
+          <div><dt>Phone and WhatsApp</dt><dd><a href="tel:+916397828030">6397828030</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:Puneetkumarshukla88@gmail.com">Puneetkumarshukla88@gmail.com</a></dd></div>
+        </dl>
+        <div class="note">
+          <p>Message us your problem and preferred time, and we will confirm your appointment.</p>
+          <div class="cta">
+            <a class="btn btn-main" href="https://wa.me/916397828030?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Message on WhatsApp</a>
+            <a class="btn btn-alt" href="https://www.google.com/maps/search/?api=1&query=Dr.+Punit+Shukla%27s+Dental+Clinic+Shuklaganj+Unnao" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; <span id="yr">2026</span> Dr. Punit Shukla's Dental Clinic, Shuklaganj, Unnao</footer>
+
+<a class="wa" href="https://wa.me/916397828030" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
